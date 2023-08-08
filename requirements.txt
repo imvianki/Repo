@@ -3,3 +3,5 @@ gunicorn==21.2.0
 numpy==1.18.0
 pandas==1.0.0
 scikit_learn==0.24.0
+uvicorn==0.23.2
+

@@ -29,7 +29,7 @@ values_non_inf = ['1 user reviews', '3 user reviews', '6 user reviews', '5 user 
 non_info_dict = {value: np.nan for value in values_non_inf}
 eda_data.loc[:, 'sentiment'] = eda_data['sentiment'].replace(non_info_dict)
 
-eda_data.dropna(subset=['sentiment', 'price'], ignore_index=True, inplace=True)
+eda_data.dropna(subset=['sentiment', 'price'], inplace=True)
 
 # Elimina los datos anteriores al 2005
 eda_data = eda_data[eda_data['year'] >= 2005]

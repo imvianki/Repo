@@ -32,7 +32,7 @@ def get_format(date):
 data['modify_date'] = data['release_date'].apply(get_format)
 
 # Eliminamos los valores NaN de la columna 'modify_date'
-data.dropna(subset=['modify_date'], inplace=True, ignore_index=True)
+data.dropna(subset=['modify_date'], inplace=True)
 
 data['modify_date'] = pd.to_datetime(data['modify_date'])
 data['year'] = data['modify_date'].dt.year

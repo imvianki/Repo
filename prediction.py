@@ -10,7 +10,7 @@ eda_data = pd.read_csv('Datasets/data_function.csv')
 eda_data = eda_data[['genres', 'early_access', 'sentiment', 'year', 'price']]
 
 # Eliminar filas con valores nulos en las columnas seleccionadas
-eda_data.dropna(subset=['genres', 'sentiment', 'price'], inplace=True, ignore_index=True)
+eda_data.dropna(subset=['genres', 'sentiment', 'price'], inplace=True)
 
 values_to_drop = ['Free Demo', 'Play for Free!', 'Install Now', 'Play WARMACHINE: Tactics Demo', 'Free Mod', 'Install Theme', 'Play Now', 'Free HITMAN™ Holiday Pack', 'Play the Demo', 'Free to Try', 'Free to Use', 'Third-party']
 
